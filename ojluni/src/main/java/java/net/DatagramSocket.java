@@ -155,7 +155,6 @@ class DatagramSocket implements java.io.Closeable {
                 connectState = ST_CONNECTED_NO_IMPL;
             } else {
                 try {
-
                     // socket is now connected by the impl
                     connectState = ST_CONNECTED;
                     getImpl().connect(address, port);
